@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.1/socket.io.js"></script>
+    <script src="app.js"></script>
+    <title>OnlineChat</title>
+</head>
+<body>
+    <div class="container">
+        <div class="panel" id="login-ui">
+            <h1 class="title">Login</h1>
+            <div class="login-form">
+                    <input class="form-control" id="username-input" type="text" placeholder="Username">
+                    <span class="login-error" id="login-error">Error</span>
+                    <button onclick="login()" class="btn">Login</button>
+            </div>
+
+            <div class="icons">
+                <a href="https://github.com/sammwyy/online-chat" target="_blank">
+                    <img src="https://image.flaticon.com/icons/png/512/25/25231.png" alt="github loco" class="icon">
+                </a>
+
+                <a href="https://youtube.com/c/sammwy" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/1280px-YouTube_full-color_icon_%282017%29.svg.png" alt="youtube logo" class="icon">
+                </a>
+
+                <a href="https://twitter.com/sammwy" target="_blank">
+                    <img src="https://deportesinc.com/depsite/wp-content/uploads/2017/10/60414c58e954d7236837248225e0216f_new-twitter-logo-vector-eps-twitter-logo-clipart-png_518-518.png" alt="twitter logo" class="icon">
+                </a>
+
+                <a href="https://patreom.con/sammwy" target="_blank">
+                    <img src="https://cdn.iconscout.com/icon/free/png-256/patreon-282262.png" alt="patreon logo" class="icon">
+                </a>
+            </div>
+        </div>
+
+        <div class="chatbox" id="chat-ui">
+            <h2 class="title">Online Chat</h2>
+
+            <div class="messages-list" id="chat-list"></div>
+            
+            <div class="chat-form">
+                <input class="form-control" id="message-input" type="text" placeholder="Your message">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

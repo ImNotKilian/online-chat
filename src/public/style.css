@@ -1,0 +1,152 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: url('bg.jpg') no-repeat center fixed;
+    background-size: cover;
+    color: #6d6e71;
+    font: 300 1rem Museo Sans,Arial,Helvetica,sans-serif;
+}
+
+.container {
+    margin: 5%;
+}
+
+.panel {
+    width: 260px;
+    text-align: center;
+    margin: auto;
+    margin-top: 12%;
+    border: 1px solid #f2f2f2;
+    border-radius: 16px;
+    padding: 64px 48px;
+    box-shadow: 0 0 48px rgba(0,0,0,.3);
+    background-color: white;
+}
+
+.panel > .title {
+    margin: 0 0 40px;
+    color: #4f4f4f;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.form-control {
+    width: 90%;
+    display: block;
+    padding: 4px 4px 4px 24px;
+    transition: border-color .2s ease-in-out;
+    border-bottom: 2px solid #e3e3e3;
+    border-width: 0 0 2px;
+    font-size: 15px;
+    line-height: 24px;
+}
+
+.form-control:active, .form-control:focus {
+    border-color: #4066E0;
+    outline: none;
+}
+
+.btn {
+    display: block;
+    position: relative;
+    padding: 12px 32px;
+    transition: box-shadow .2s ease-in-out;
+    border: 2px solid transparent;
+    border-radius: 100px;
+    background: #4066E0;
+    color: #fff;
+    font-size: 1.125rem;
+    font-weight: 500;
+    letter-spacing: .2px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.btn:hover {
+    text-decoration: none;
+    box-shadow: 0 0 16px 0 #4066E0;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+.icons {
+    margin-top: 30px;
+}
+
+.icons > a {
+    text-decoration: none;
+}
+
+.icon {
+    height: 32px;
+    margin: 0 10px;
+}
+
+.login-error {
+    display: none;
+    margin-top: 20px;
+    color: red;
+    text-align: left;
+}
+
+#chat-ui {
+    display: none;
+}
+
+.messages-list {
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 400px;
+    max-height: 400px;
+    margin-bottom: 50px;
+    scroll-behavior: smooth;
+}
+
+.chatbox {
+    width: 60%;
+    margin: auto;
+    border: 1px solid #f2f2f2;
+    border-radius: 16px;
+    padding: 48px 48px;
+    box-shadow: 0 0 48px rgba(0,0,0,.3);
+    background-color: white;
+    min-height: 500px;
+}
+
+.message-item {
+    background-color: #4066E0;
+    padding: 16px;
+    width: 400px;
+    border-radius: 22px;
+    margin-top: 10px;
+}
+
+.own-msg {
+    background-color: #797979;
+    margin-left: auto;
+}
+
+.message-author {
+    display: block;
+    color: white;
+    font-weight: bold;
+}
+
+.message-content {
+    color: rgb(204, 204, 204);
+}
+
+.broadcast {
+    background-color: white;
+    padding: 8px;
+}
+
+.broadcast > .message-content {
+    color: purple;
+    font-weight: bold;
+}
